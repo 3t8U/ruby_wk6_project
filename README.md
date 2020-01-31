@@ -31,9 +31,9 @@ Things you may want to cover:
 
 ## Description
 
-_This application allows the user to create, read, update & delete projects and their associated volunteers_
+_This API stores data on local shops, restaurants & parks. It allows the user to view, create, read & update the database_
 
-_https://3t8u.github._
+_https://github.com/3t8U/ruby_wk6_project_
 
 ##Specs
 
