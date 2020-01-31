@@ -17,12 +17,20 @@ class ShopsController < ApplicationController
 
   def update
     @shop = Shop.find(params[:id])
-    @shop.update(shop_params)
+     if @shop.update!(shop_params)
+       render status: 200, json: {
+          group: "Nice job on the update!"
+          }
+       end   
   end
 
   def destroy
     @shop = Shop.find(params[:id])
-    @shop.destroy
+     if @shop.destroy!
+     render status: 200, json: {
+           group: "You killed it!!!"
+         }
+       end
   end
 
   private

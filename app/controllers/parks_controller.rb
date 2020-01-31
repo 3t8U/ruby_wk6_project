@@ -17,12 +17,20 @@ class ParksController < ApplicationController
 
   def update
     @park = Park.find(params[:id])
-    @park.update(park_params)
+     if @park.update!(park_params)
+    render status: 200, json: {
+       group: "Nice job on the update!"
+       }
+    end
   end
 
   def destroy
     @park = Park.find(params[:id])
-    @park.destroy
+     if @park.destroy!
+    render status: 200, json: {
+          group: "You killed it!!!"
+        }
+      end
   end
 
   private

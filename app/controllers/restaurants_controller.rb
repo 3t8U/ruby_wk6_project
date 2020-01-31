@@ -17,12 +17,21 @@ class RestaurantsController < ApplicationController
 
   def update
     @restaurant = Restaurant.find(params[:id])
-    @restaurant.update(restaurant_params)
+     if @restaurant.update!(restaurant_params)
+       render status: 200, json: {
+          group: "Nice job on the update!"
+          }
+       end
   end
 
   def destroy
     @restaurant = Restaurant.find(params[:id])
-    @restaurant.destroy
+     if @restaurant.destroy!
+       render status: 200, json: {
+             group: "You killed it!!!"
+           }
+         end
+
   end
 
   private
