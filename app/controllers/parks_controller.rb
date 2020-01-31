@@ -1,7 +1,7 @@
 class ParksController < ApplicationController
 
   def index
-    @parks = {" Brindle park": "325th Oak St."}
+    @parks = {"Brindle park": "325th Oak St."}
     json_response(@parks)
   end
 
