@@ -21,7 +21,7 @@ class ShopsController < ApplicationController
        render status: 200, json: {
           group: "Nice job on the update!"
           }
-       end   
+       end
   end
 
   def destroy
@@ -41,4 +41,15 @@ class ShopsController < ApplicationController
   def shop_params
     params.permit(:name, :location, :description)
   end
+end
+
+
+private
+def json_response(object, status = :ok)
+  render json: object, status: status
+end
+
+def restaurant_params
+  params.permit(:name, :location, :description)
+end
 end

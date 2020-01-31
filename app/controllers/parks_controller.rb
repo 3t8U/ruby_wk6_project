@@ -42,3 +42,14 @@ class ParksController < ApplicationController
     params.permit(:name, :location, :description)
   end
 end
+
+
+private
+def json_response(object, status = :ok)
+  render json: object, status: status
+end
+
+def restaurant_params
+  params.permit(:name, :location, :description)
+end
+end
