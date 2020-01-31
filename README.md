@@ -62,7 +62,14 @@ _https://github.com/3t8U/ruby_wk6_project_
 
 * _Open your web browser to Localhost:3000_
 
-* _Open up Postman and enter the following address into the address bar http://localhost:3000 + either [/parks] , [/restaurants]
+* _Open up Postman and enter the following credentials into the params:
+ email : admin@mail.com
+password : 123123123 _
+
+* _In the Postman console enter the token : eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJleHAiOjE1ODA2MDAwMjZ9.JAyzoX4q4hvPsf2dMstcPbIwxER6cjxzxhUdJureaVg
+as a "bearer token" in the authentication section _
+
+* _In Postman enter the following address into the address bar http://localhost:3000 + either [/parks] , [/restaurants]
 or [/shops] to start accessing the API's data._
 
 
@@ -102,3 +109,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.*
 
 Copyright (c) 2020 **_Nate Powers_**
+
+
+admin@mail.com
+{"auth_token":"eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJleHAiOjE1ODA2MDAwMjZ9.JAyzoX4q4hvPsf2dMstcPbIwxER6cjxzxhUdJureaVg"}
