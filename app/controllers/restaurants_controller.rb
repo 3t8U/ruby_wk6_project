@@ -43,11 +43,3 @@ class RestaurantsController < ApplicationController
     params.permit(:name, :location, :description)
   end
 end
-
-
-
-def horse
-  @rest_params do |params|
-    params = @rest_params.capitalize.join('')
-  end
-end
